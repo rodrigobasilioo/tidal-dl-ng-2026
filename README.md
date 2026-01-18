@@ -1,15 +1,29 @@
-# 🔰 TIDAL Downloader Next Generation! (tidal-dl-ng)
+FIX FOR HI_RES_LOSSLESS option:
+  - install as usual with pip/pipx/uv (see Installation below)
+  - open the file nodes.py from mpegdash inside your tidal-dl-ng python environment , I installed with uv with python 3.12 so my path on linux is "~/.local/share/uv/tools/tidal-dl-ng/lib/python3.12/site-packages/mpegdash/nodes.py", yours might be different
+  - find the line 'self.group = parse_attr_value(xmlnode, 'group', int)' and replace it with 'self.group = parse_attr_value(xmlnode, 'group', str)'
 
-[![Release](https://img.shields.io/github/v/release/exislow/tidal-dl-ng)](https://img.shields.io/github/v/release/exislow/tidal-dl-ng)
-[![Build status](https://img.shields.io/github/actions/workflow/status/exislow/tidal-dl-ng/on-release-master.yml)](https://github.com/exislow/tidal-dl-ng/actions/workflows/on-release-master.yml)
-[![Commit activity](https://img.shields.io/github/commit-activity/m/exislow/tidal-dl-ng)](https://img.shields.io/github/commit-activity/m/exislow/tidal-dl-ng)
-[![License](https://img.shields.io/github/license/exislow/tidal-dl-ng)](https://img.shields.io/github/license/exislow/tidal-dl-ng)
+now u can restart the app and its gonna work, this error happens because tidal now uses the 'max' flag and doesnt return the quality inside metadata like it used to, but u still gonna get the max quality tidal has to offer
 
-This tool allows to download songs and videos from TIDAL. Multithreaded and multi-chunked downloads are supported.
+/
 
-⚠️ **Windows** Defender / **Anti Virus** software / web browser alerts, while you try to download the app binary: This is a **false positive**. Please read [this issue](https://github.com/exislow/tidal-dl-ng/issues/231), [PyInstaller (used by this project) statement ](https://github.com/pyinstaller/pyinstaller/blob/develop/.github/ISSUE_TEMPLATE/antivirus.md) and [the alternative installation solution](https://github.com/exislow/tidal-dl-ng/?tab=readme-ov-file#-installation--upgrade). ⚠️
+/
 
-**A paid TIDAL plan is required!** Audio quality varies up to HiRes Lossless / TIDAL MAX 24-bit, 192 kHz depending on the song available. You can use the command line or GUI version of this tool.
+
+/
+
+/
+
+/
+
+/
+
+
+
+
+
+
+
 
 ![App Image](assets/app.png)
 
